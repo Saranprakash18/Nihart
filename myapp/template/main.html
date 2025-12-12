@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihart - Store</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="image">
+            <img src="{% static 'images/Nihart1.png' %}" alt="Logo" class="logo-image">
+            <h1 class="logo"> Nihart</h1>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search..." class="search-input">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="mode">
+            <a href="#">Mode</a>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="sidebar">
+            <ul class="route">
+                <a href="#"><li class="bar">Home</li></a>
+                <a href="#"><li class="bar">Profile</li></a>
+                <a href="#"><li class="bar">Wallet</li></a>
+                <a href="#"><li class="bar">Cart</li></a>
+                <a href="#"><li class="bar">Orders</li></a>
+                <a href="{% url 'seller' %}"><li class="bar">Seller</li></a>
+            </ul>
+        </div> 
+        <main class="products">
+            <div class="pro-card">
+                <p>Discount upto 30%</p>
+                <img src="{% static 'images/main.jpg' %}" alt="Product 1" class="product-image">
+                <h3 class="product-title">Product 1</h3>
+                <p class="product-price">$19.99</p>
+                <p class="description">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. 
+                    nulla optio, corporis harum voluptates.</p>
+            </div>
+            <div class="pro-card">
+                <p>Discount upto 30%</p>
+                <img src="{% static 'images/main.jpg' %}" alt="Product 1" class="product-image">
+                <h3 class="product-title">Product 2</h3>
+                <p class="product-price">$19.99</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. nulla optio, corporis harum voluptates.</p>
+            </div>
+            <div class="pro-card">
+                <p>Discount upto 30%</p>
+                <img src="{% static 'images/main.jpg' %}" alt="Product 1" class="product-image">
+                <h3 class="product-title">Product 3</h3>
+                <p class="product-price">$19.99</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. nulla optio, corporis harum voluptates.</p>
+            </div>
+            <div class="pro-card">
+                <p>Discount upto 30%</p>
+                <img src="{% static 'images/main.jpg' %}" alt="Product 1" class="product-image">
+                <h3 class="product-title">Product 4</h3>
+                <p class="product-price">$19.99</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. nulla optio, corporis harum voluptates.</p>
+            </div>
+        </main>
+    </section>     
+</html>

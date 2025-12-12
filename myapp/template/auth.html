@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}">
+</head>
+<body>
+    <form action="" class="login">
+        <div class="container">
+            <h1>Login</h1>
+            <div class="details">
+                <input type="text" placeholder="UserName">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="check">
+                <input type="checkbox" id="remmember">
+                <label for="remmember">Remmember Me</label>
+            </div>
+            <div class="buttons">
+                <a href="{% url 'main' %}" class="log">login</a>
+                <a href="{% url 'main' %}" class="sig">Signup</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
